@@ -1,0 +1,62 @@
+.image-editor {
+    color: black;
+    border: solid 1px #2b2a30;
+  }
+  
+  .image-editor__preview {
+    height: 45px;
+    width: 45px;
+    background: black;
+    border: solid 1px #2b2a30;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border-radius: 50%;
+  }
+  
+  .image-editor__cropper {
+    background: #0f0e13;
+    height: 500px;
+    max-height: 100vh;
+    position: relative;
+  }
+  
+  .image-editor__slider {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    position: absolute;
+  }
+  
+  .image-editor__cropper-overlay {
+    transition: 0.5s;
+  }
+  
+  .image-editor__cropper-overlay--faded {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .image-editor__service {
+    pointer-events: none;
+    left: -100%;
+    position: absolute;
+  }
+  
+  .image-editor__reset-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  .image-editor__reset-button:hover {
+    fill: /* $theme-color */; /* Replace with the appropriate value */
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .image-editor__reset-button--hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  

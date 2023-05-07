@@ -1,0 +1,94 @@
+.image-editor-slider {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	border-radius: 10px;
+	cursor: pointer;
+	max-width: 380px;
+	background: rgba(27, 26, 33, 0.4);
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.image-editor-slider__wrapper {
+	display: flex;
+	align-items: center;
+	max-width: 400px;
+	width: 100%;
+}
+.image-editor-slider__line {
+	background: rgba(255, 255, 255, 0.5);
+	height: 2px;
+	width: 100%;
+	display: flex;
+	position: relative;
+	align-items: center;
+}
+.image-editor-slider__fill {
+	background: white;
+	align-self: stretch;
+	flex-basis: auto;
+	flex-direction: column;
+	flex-shrink: 0;
+	position: absolute;
+	height: 2px;
+}
+.image-editor-slider__dot {
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.image-editor-slider__value {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	transition-duration: 0.5s;
+	transition-property: font-size, opacity;
+	color: white;
+	font-size: 10px;
+	font-weight: 500;
+	top: -20px;
+	vertical-align: bottom;
+	transform: translate(-50%);
+}
+.image-editor-slider__handler {
+	width: 2px;
+	height: 8px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	transition-duration: 0.2s;
+	transition-property: height;
+	background-color: white;
+}
+.image-editor-slider__handler:hover {
+	height: 10px;
+}
+.image-editor-slider__handler--focus {
+	height: 10px;
+}
+.image-editor-slider__handler--hidden {
+	height: 4px;
+}
+.image-editor-slider__inner-circle {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: var(--theme-color);
+	transform: scale(1);
+	transition-duration: 0.1s;
+	transition-property: transform;
+	box-shadow: rgba(var(--theme-color), 0.2) 0px 0px 7px, rgba(var(--theme-color), 0.15) 0px 1px 3px 1px;
+}
+.image-editor-slider__inner-circle--focus {
+	transform: scale(1.2);
+}
